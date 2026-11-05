@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, Pressable, ScrollView, StyleSheet } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, Text as RNText } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ExternalLink } from '@/components/external-link';
@@ -47,7 +47,7 @@ export default function TabTwoScreen() {
             <Pressable style={({ pressed }) => pressed && styles.pressed}>
               <ThemedView type="backgroundElement" style={styles.linkButton}>
                 <ThemedText type="link">Expo documentation</ThemedText>
-                <Text style={{ color: theme.text, fontSize: 12 }}>↗</Text>
+                <RNText style={{ color: theme.text, fontSize: 12 }}>↗</RNText>
               </ThemedView>
             </Pressable>
           </ExternalLink>
